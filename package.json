@@ -1,0 +1,33 @@
+{
+  "name": "ghokho",
+  "version": "2.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "start server": "npx ts-node src/server.ts",
+    "start commander": "npx ts-node src/commander/commander.ts",
+    "start test": "npx ts-node src/test.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run lint"
+  },
+  "author": "Younes Nikbin",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/md5": "^2.3.2",
+    "@types/node": "^14.11.2",
+    "@types/zeromq": "^5.2.1",
+    "gts": "^3.1.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "md5": "^2.3.0",
+    "ts-node": "^10.9.1",
+    "zeromq": "^5.3.1"
+  }
+}
